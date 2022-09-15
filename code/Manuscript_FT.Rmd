@@ -1,0 +1,57 @@
+---
+title: "Manuscript"
+author: "Fred Tremblay"
+date: "15/09/2022"
+
+geometry: margin=1in
+header-includes:
+  -\usepackage{setspace}
+  -\doublespacing
+  -\usepackage{lineno}
+  -\linenumbers
+  -\usepacke{fontspec}
+  -\setmainfont{Times New Roman}
+
+output: 
+  pdf_document:
+    latex_engine: xelatex
+
+csl: https://www.zotero.org/styles/ecology-letters
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**TITLE:** Kittiwake Energetics Moc Project
+
+Fred Tremblay^1\*^
+
+^1^Department of Natural Resources, McGill University, Montreal, Canada
+
+\*Corresponding author
+
+\newpage
+
+#Abstract
+
+Energy is a common currency for any living organism, and understanding how animals use energy is critical to understanding their ecology and consequently how they might adapt to changes in their environment. Individual variation in daily energy expenditure is often linked to varying activity budgets. Doubly-labelled water (DLW) is a commonly used technique to measure energy expenditure in wild animals (Speakman 1997). The use of DLW enables us to measure daily energy expenditure by injecting a bolus of heavy water (deuterium and 18 O). Commonly used when using DLW is the two sample method. Yet, when working with free-ranging animals, the manipulations linked with the two sample method can be invasive and stressful for the animals. Here, we investigate the effects of the two-sample method compared tot he single-sample method for measuring energy expenditure using DLW in free-ranging black-legged kittiwakes (Rissa tridactyla).
+
+#Introduction
+
+#Methods
+
+#Results
+
+#Discussion
+
+#References
+
+#Tables
+
+#Figure Captions
+
+#Figures
+
+#Appendices
