@@ -63,13 +63,18 @@ output: prereg::prereg_pdf
 
 <!-- How many observations will be collected or what will determine sample size? No need to justify decision, but be precise about _exactly_ how the number will be determined. -->
 
-> We will include data from 51 kittiwakes (Single sample = 10, two-sample = 41). For all individuals, we obtained field metabolic rate and time-activity budget. To prevent a sex bias based on sex and mass difference, this study includes only males, and we will use the corrected energy expenditure to a mass of 450g for all individuals. 
+> We will include data from 49 kittiwakes (Single sample = 24, two-sample = 25). For all individuals, we obtained field metabolic rate and time-activity budget. To prevent a sex bias based on sex and mass difference, this study includes only males, and we will use the corrected energy expenditure to a mass of 450g for all individuals. 
 
 ## Other
 
 <!-- Anything else you would like to pre-register? (e.g., secondary analyses, variables collected for exploratory purposes, unusual analyses planned?) -->
 
-> The data used for this class project has been used to answer a different question. Thus, the sample size for each treatment group is not ideal and squewed. We acknoledge the bias in our data and conclusions drawn from this class project should not be extended past the scope of this course. 
+> The data in this repository represents real data that has been willingly manipulated in the context of the Living Data Project course as some of the
+information is currently part of a manuscript awaiting publication. The dataset includes energy expenditure and time acitvity budget obtained using 
+GPS-accelerometers and DLW in breeding black-legge dkittiwakes on Middleton Island, AK, in 2021. The data was collected by the main author of this 
+repoository (Fred Tremblay). 
+
+> For question regarding this data please contact author. 
 
 ## Study type
 
