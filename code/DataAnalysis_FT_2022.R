@@ -18,11 +18,15 @@ str(data)
 
 #libraries will be download using 'library()' rather than 'groudhog()' to avoid messing other scripts
 library(ggplot2)
+install.packages("ggsignif")
+library(ggsignif)
 
 #### PLOT 1: DEE vs DLW methods ####
 
 ggplot(data, aes(x = Type, y = DEE.kJ.d, fill = Type)) + geom_boxplot() + theme_bw() +
   ylab("Energy Expenditure (kJ/g*d)") + xlab("DLW sampling method") + 
   scale_fill_manual(values = c("grey", "tan")) +
+  geom_signif(comparisons = list(c("2-sample", "1-sample")), map_signif_level=TRUE) 
+
   
   
