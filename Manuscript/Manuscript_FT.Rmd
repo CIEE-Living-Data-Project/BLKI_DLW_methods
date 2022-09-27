@@ -1,28 +1,17 @@
 ---
-title: "Manuscript"
-author: "Fred Tremblay"
-date: "15/09/2022"
-
-geometry: margin=1in
-header-includes:
-  -\usepackage{setspace}
-  -\doublespacing
-  -\usepackage{lineno}
-  -\linenumbers
-  -\usepacke{fontspec}
-  -\setmainfont{Times New Roman}
-
 output: 
-  pdf_document:
-    latex_engine: xelatex
+  pdf_document: default
 
-csl: https://www.zotero.org/styles/ecology-letters
-bibliography: references.bib
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.pos = 'H')
+#install.packages("tinytex")
+#library(tinytex)
+ #tinytex::install_tinytex()
 ```
+
 
 **TITLE:** Kittiwake Energetics Moc Project
 
@@ -34,24 +23,36 @@ Fred Tremblay^1\*^
 
 \newpage
 
-#Abstract
+# Abstract
 
-Energy is a common currency for any living organism, and understanding how animals use energy is critical to understanding their ecology and consequently how they might adapt to changes in their environment. Individual variation in daily energy expenditure is often linked to varying activity budgets. Doubly-labelled water (DLW) is a commonly used technique to measure energy expenditure in wild animals (Speakman 1997). The use of DLW enables us to measure daily energy expenditure by injecting a bolus of heavy water (deuterium and 18 O). Commonly used when using DLW is the two sample method. Yet, when working with free-ranging animals, the manipulations linked with the two sample method can be invasive and stressful for the animals. Here, we investigate the effects of the two-sample method compared tot he single-sample method for measuring energy expenditure using DLW in free-ranging black-legged kittiwakes (Rissa tridactyla).
+Here, we investigate the effects of the two-sample method compared to the single-sample method for measuring energy expenditure using DLW in free-ranging black-legged kittiwakes (Rissa tridactyla).
 
-#Introduction
+# Introduction
 
-#Methods
+Energy is a common currency for any living organism, and understanding how animals use energy is critical to understanding their ecology and consequently how they might adapt to changes in their environment. Individual variation in daily energy expenditure is often linked to varying activity budgets. Doubly-labelled water (DLW) is a commonly used technique to measure energy expenditure in wild animals [@speakman1997]. The use of DLW enables us to measure daily energy expenditure by injecting a bolus of heavy water (deuterium and 18 O). Commonly used when using DLW is the two sample method. Yet, when working with free-ranging animals, the manipulations linked with the two sample method can be invasive and stressful for the animals. Here, we investigate the effects of the two-sample method compared tot he single-sample method for measuring energy expenditure using DLW in free-ranging black-legged kittiwakes (Rissa tridactyla).
 
-#Results
+# Methods
 
-#Discussion
+We measured energy expenditure in black-legged kittiwakes using doubly--labelled water using two commonly used method: the single-sample and the double-sample method. Along with our measure of energy expenditure, we calculated time-activity budgets of free ranging kittiwake susing GPS-accelerometry data. We completed all analysis and figures using Rstudio.
 
-#References
+# Results
 
-#Tables
+Both DLW method are comparable and did not have a differential impact on the kittiwakes' energetics (figure 1) and time-activity budget (figure 2).
 
-#Figure Captions
+![](Outputs/Figure_1.png) **Figure 1:** Energy expenditure (kJ/day) of single-sampled (grey) and two-sampled (beige) black-legged kittiwakes.
 
-#Figures
+![](Outputs/Figure_2.png) **Figure 2:** Time-activity budget of single-sampled (grey) and two-sampled (beige) black-legged kittiwakes.
 
-#Appendices
+# Discussion
+
+The two-sample method when measuring energy expenditure has no differential impact on the kittiwakes when compared to the single sample method. Thus, as the two-sample method allows us to measure energy expenditure more precisely [@speakman1997], this method should be favored.
+
+# References
+
+::: {#refs}
+:::
+
+
+output: 
+  pdf_document: 
+    latex_engine: xelatex
