@@ -23,19 +23,26 @@ library(ggsignif)
 
 #### DEE vs DLW methods ####
 
+
 DEE<- ggplot(data, aes(x = Type, y = DEE.kJ.d, fill = Type)) + geom_boxplot() + theme_bw() +
   ylab("Energy Expenditure (kJ/g*d)") + xlab("DLW sampling method") + 
   scale_fill_manual(values = c("grey", "tan")) +
   geom_signif(comparisons = list(c("2-sample", "1-sample")), map_signif_level=TRUE) 
+#plot daily energy expenditure (DEE) vs DLW method using gpglot
+#geom_signif plots statistical difference between the two groups using NS, *, **, *** based on p-value
 
 ggsave("Outputs/Figure_1.png", DEE)
-
+#save figure in Output folder
 
 #### TIME_ACTIVITY_BUDGET VS METHODS #####
 library(car)
 library(emmeans)
 library(gridExtra)
 str(data)
+
+#plot each behaviour individually vs DLW method using gpglot
+#geom_signif plots statistical difference between the two groups using NS, *, **, *** based on p-value
+
 
 fly <- ggplot(data, aes(x = Type, y = propFlycal, fill = Type)) + geom_boxplot() + theme_bw() +
   ylab("") + xlab("DLW sampling method") + 
@@ -68,5 +75,8 @@ col <- ggplot(data, aes(x = Type, y = propColcal, fill = Type)) + geom_boxplot()
   geom_signif(comparisons = list(c("2-sample", "1-sample")), map_signif_level=TRUE) 
 
 TAB <- grid.arrange(col,swim,fly, rest, glide, ncol=5)
+#use grid.arrange to merge all plot inot a single figure with 5 columns
+
 ggsave("Outputs/Figure_2.png", TAB)
+#save figure in Output folder
 
